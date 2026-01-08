@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+
+    <div class="wrapper">
+        <div class="red-circle"></div>
+        <div class="blue-circle"></div>
+
+        <div class="card-container">
+            <img src="./image/user-cover-2.png" alt="">
+            <h2>shashank Mishra</h2>
+            <p>Developer</p>
+            <div class="button-container">
+    
+                <button onclick="OpenModal()">Share My Profile
+                </button>
+    
+                <button>Follow Me
+                </button>
+    
+            </div>
+        </div>
+
+    </div><!--ek pura wrapper jiske andar card-container hai-->
+
+    
+
+
+    <!-- ye wo part hai jo click karne ke baad visible hoga i.e modal component ka code hai -->
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Share My Profile</h2>
+            <button onclick="CloseModal()">X</button>
+        </div>
+
+        
+        <div>
+            <h5>Share this Via</h5>
+
+
+            <div class="icon-container">
+                <a href="#" class="icon" id="facebook">
+                    <img src="./image/facebook.png" alt="">
+                </a>
+                <a href="#" class="icon" id="instagram">
+                    <img src="./image/instagram.png" alt="">
+                </a>
+                <a href="#" class="icon" id="twitter">
+                    <img src="./image/social.png" alt="">
+                </a>
+                <a href="#" class="icon" id="github" onc>
+                    <img src="./image/github.png" alt="">
+                </a>
+                <a href="#" class="icon" id="whatsapp">
+                    <img src="./image/whatsapp.png" alt="">
+                </a>
+            </div> <!--only icons wala div hai-->
+        </div> <!-- ye wo div hai jisme saare icons and h5 hai-->
+    </div> <!--modals ending div hai-->
+
+    <!-- overlay ka hai jab click karte share my profile pe to background color change ho jaata h -->
+    <div class="overlay" onclick="CloseModal()"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
